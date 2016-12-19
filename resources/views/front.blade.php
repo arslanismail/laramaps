@@ -15,6 +15,26 @@
 
         <br><br>
         <br><br>
+<div style="margin-left: 450px">
+        {!! Form::open([]) !!}
+
+        {!! Form::label('district','District') !!}
+
+
+        {!! Form::select('district', $district,null,['id'=>'district'])!!}
+
+    <div id="city">
+
+
+    </div>
+
+
+
+    {!! Form::close() !!}
+
+
+
+    </div>
 
     </div>
 

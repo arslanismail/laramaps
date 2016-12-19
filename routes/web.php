@@ -11,8 +11,12 @@
 |
 */
 
+use App\place;
+
 Route::get('/', function () {
-    return view('front');
+
+    $district=place::pluck('place','place');
+    return view('front',compact('district'));
 });
 
 

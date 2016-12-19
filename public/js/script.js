@@ -97,7 +97,8 @@ function SearchLocation(lat,lng) {
 
   $.post('http://localhost:8000/api/searchlocation',{lat:lat,lng:lng},function (match) {
 
-   // console.log(match);
+    console.log(match);
+
     $.each(match,function (i,val) {
 
      var glatval=val.lat;
@@ -113,9 +114,11 @@ function SearchLocation(lat,lng) {
 
 
 
-      createMarker(glatlang,gicn,gname)
+      createMarker(glatlang,gicn,gname);
 
     });
+
+
   })
 }
 
